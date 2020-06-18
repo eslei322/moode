@@ -40,7 +40,7 @@ while ($line) {
 
 // check for no players found
 if (empty(trim($_players))) {
-	$_players = '<li style="font-size:large">No other players found</li>';
+	$_players = '<li style="font-size:large">没有其他播放器</li>';
 }
 
 $tpl = 'players.html';
