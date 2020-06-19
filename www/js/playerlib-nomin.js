@@ -18,7 +18,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * 2020-MM-DD TC moOde 6.6.0
+ * 2020-04-24 TC moOde 6.5.0
  *
  */
 
@@ -53,15 +53,13 @@ function deleteRadioStationObject (station_name) {
 function getParamOrValue (type, key) {
     let mapTable = new Map([
         // Screen saver timeout
-        ['Never','Never'],['1 minute','60'],['2 minutes','120'],['5 minutes','300'],['10 minutes','600'],['20 minutes','1200'],['30 minutes','1800'],['1 hour','3600'],
+        ['禁用','Never'],['1 分钟','60'],['2 分钟','120'],['5 分钟','300'],['10 分钟','600'],['20 分钟','1200'],['30 分钟','1800'],['1 小时','3600'],
         // Library recently added
-        ['1 Week','604800000'],['1 Month','2592000000'],['3 Months','7776000000'],['6 Months','15552000000'],['1 Year','31536000000'],
+        ['1 星期','604800000'],['1 个月','2592000000'],['3 个月','7776000000'],['6 个月','15552000000'],['1 整年','31536000000'],
         // Library cover search priority
-        ['Embedded','Embedded cover'],['Cover file','Cover image file'],
+        ['曲目内嵌','Embedded cover'],['专辑封面','Cover image file'],
         // Font size factors
-        ['Smaller',.35],['Small',.40],['Normal',.45],['Large',.55],['Larger',.65],['X-Large',.75],
-        // Sample rate display options
-        ['No (searchable)',0],['HD only',1],['Text',2],['Badge',3],['No',9]
+        ['最小',.35],['较小',.40],['正常',.45],['较大',.55],['加大',.65]
     ]);
 
     if (type == 'value') {
